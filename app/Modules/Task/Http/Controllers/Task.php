@@ -9,6 +9,10 @@ use App\Http\Controllers\Controller;
 
 class Task extends Controller
 {
+    public function index(){
+        return view('task::task_list');
+    }
+    
     public function addTask(){
         return view('task::add_task');
     }

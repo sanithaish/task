@@ -12,5 +12,6 @@
 */
 
 Route::group(['prefix' => 'task'], function () {
+    Route::get('/', 'Task@index');
     Route::get('/addTask', 'Task@addTask');
 });
